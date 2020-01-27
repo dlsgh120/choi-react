@@ -20,13 +20,17 @@
     font-size: 16px;
 }
 
+.Board-image{
+    margin-right:30px;
+}
+
 .Board-image img{
     width: 500px;
     height: 350px;
 }
 .Board-body{
     margin-top:5%;
-    margin-left:15%;
+    margin-left:20%;
 }
 .row{
     display: -ms-flexbox;
@@ -34,10 +38,10 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
-.Board-content{
-    padding-left:30px;
-    padding-right: 30px;
-}
+
+/* .Board-content{
+
+} */
 
 .Board-title p{
     font-size: 16px;

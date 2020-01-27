@@ -25,4 +25,9 @@
 
 .Contact-bottom{
     text-align: center;
+    margin-top:30px;
+}
+
+.github_logo{
+    height: 50px;
 }

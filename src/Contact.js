@@ -14,7 +14,9 @@ class Contact extends Component{
                     <p className="Contact-phone">Phone : 010 5288 3923</p>
                 </div>
                 <div className="Contact-bottom">
-                    깃헙주소
+                    <a href="https://github.com/dlsgh120/choi-react">
+                        <img src="./github_logo.png" alt="" className="github_logo"></img>
+                    </a>
                 </div>
             </div>
         );
