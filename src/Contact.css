@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+
+.Contact{
+    height:100vh;
+    background-color: #e5e5e5;
+    padding-bottom: 5%;
+}
+
+.Contact-header h5{
+    margin-top:0;
+    padding-top:10%;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 38px;
+}
+
+.Contact-content{
+    text-align: center;
+}
+
+.Contact-content p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.Contact-bottom{
+    text-align: center;
+}

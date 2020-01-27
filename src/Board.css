@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+
+.Board{
+    height:100%;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom:7%;
+}
+.Board-header{
+    padding-top: 7%;
+}
+
+.Board-header h2{
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 38px;
+}
+
+.Board-header p{
+    text-align: center;
+    font-size: 16px;
+}
+
+.Board-image img{
+    width: 500px;
+    height: 350px;
+}
+.Board-body{
+    margin-top:5%;
+    margin-left:15%;
+}
+.row{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.Board-content{
+    padding-left:30px;
+    padding-right: 30px;
+}
+
+.Board-title p{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.Board-Sub p{
+    font-size: 14px;
+}
+
+.Board-bottom{
+    display: flex;
+    margin-top: 80px;
+}
+.Board-bottoms{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.imageRender{
+    width: 80px;
+    height: 80px;
+    margin-left:20px;
+    cursor: pointer;
+}
+
+.imageRender:hover{
+    width:90px;
+    height: 90px;
+}

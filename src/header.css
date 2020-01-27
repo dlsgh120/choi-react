@@ -1,0 +1,47 @@
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #f8f9fa;
+}
+
+.header-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom:5px;
+}
+
+.header-name p{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header-list{
+    display: flex;
+}
+
+.header-list ul{
+    display: flex;
+    list-style: none;
+}
+
+
+.header-list ul li{
+    margin-left:30px;
+    cursor: pointer;
+    font-size:18px;
+    color: gray;
+    font-weight: 600;
+}
+
+.header-list ul li:hover{
+    color:black;
+}
+
+.active{
+    color: black;
+}

@@ -1,0 +1,92 @@
+.Project{
+    background-color: #002435;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: block;
+    padding-bottom: 50px;
+}
+
+.Project-header{
+    margin-top:0;
+    padding-top: 50px;
+    font-size: 32px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.Project-image{
+    width: 300px;
+    height: 300px;
+}
+.Project-image img{
+    width: 300px;
+    height: 300px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Project-image img:hover{
+    opacity: 0.8;
+}
+
+.Project-columms{
+    display: flex;
+    width:60%;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);
+    margin-top:30px;
+    margin-left: 20%;
+    border-radius: 15px 15px 15px 15px; 
+}
+
+.Project-use{
+    display: flex;
+}
+
+.Project-use p{
+    margin-left:14px;
+}
+
+.Project-name{
+    text-align: center;
+}
+
+.Project-term{
+    margin-left:15px;
+}
+
+.Project-term p{
+    font-size: 14px;
+}
+
+.Project-person{
+    margin-left:15px;
+}
+
+.Project-person p{
+    font-size: 14px;
+}
+
+.Project-explain{
+    margin-left:15px;
+}
+
+.Project-explain p{
+    font-size: 14px;
+}
+
+.Project-use-text{
+    font-size: 14px;
+}
+
+.Project-git{
+    margin-left:15px;
+}
+
+.Project-git a{
+    font-size: 14px;
+    color:black;
+}
