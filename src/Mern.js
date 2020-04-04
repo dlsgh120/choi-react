@@ -3,8 +3,8 @@ import './mern.css';
 
 class Mern extends Component{
     state={
-        image:['../images/1.png','../images/2.png','../images/3.png','../images/4.png','../images/5.png','../images/6.png','../images/7.png'],
-        data:'../images/1.png' }
+        image:["https://ifh.cc/g/eCGK6o.png","https://ifh.cc/g/PSsgi5.png","https://ifh.cc/g/3YVS5c.png","https://ifh.cc/g/up6Ufq.png","https://ifh.cc/g/M9USrd.png","https://ifh.cc/g/J2z3Zz.png","https://ifh.cc/g/8JQdea.png"],
+        data:"https://ifh.cc/g/eCGK6o.png" }
 
     render(){
         
@@ -30,7 +30,7 @@ class Mern extends Component{
                 
                     <div className="Mern-image">
                         <a href="https://choi-mern.herokuapp.com/">
-                            <img src={process.env.PUBLIC_URL+this.state.data} alt=""></img>
+                            <img src={this.state.data} alt=""></img>
                         </a>
                     </div>
                     <div className="Mern-content">
@@ -42,7 +42,7 @@ class Mern extends Component{
                <div className="Mern-bottom">
                    <div className="Mern-bottoms">
                         {this.state.image.map((image, index) =>
-                            <img className="imageRender" key={index} src={process.env.PUBLIC_URL+image} alt="" onClick={()=>{this.setState({data:image})}}></img>    
+                            <img className="imageRender" key={index} src={image} alt="" onClick={()=>{this.setState({data:image})}}></img>    
                         )}
                    </div>
                </div>
