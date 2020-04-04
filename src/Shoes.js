@@ -3,19 +3,17 @@ import './Shoes.css';
 
 class Shoes extends Component{
     state={
-        image:["https://ifh.cc/g/KtAGG.jpg", "https://ifh.cc/g/gFKVx.png", "https://ifh.cc/g/BePBQ.png", 
-             "https://ifh.cc/g/4Iveo.jpg", "https://ifh.cc/g/VMdqD.png", "https://ifh.cc/g/uibYq.png", 
-             "https://ifh.cc/g/VofV1.png", "https://ifh.cc/g/8u3SA.png", "https://ifh.cc/g/R1tAX.png", 
-             "https://ifh.cc/g/Kc2LF.png", "https://ifh.cc/g/1HvIz.png"],
-        data:"https://ifh.cc/g/KtAGG.jpg" }
+        image:['../shoes_images/1.png','../shoes_images/2.png','../shoes_images/3.png','../shoes_images/4.png','../shoes_images/5.png',
+               '../shoes_images/6.png','../shoes_images/7.png','../shoes_images/8.png','../shoes_images/9.png','../shoes_images/10.png'],
+        data:'../shoes_images/1.png' }
 
     render(){
         
         const list =[
             {title:"개발기간", content:["2019-10-01 ~ 2019-11-15 (약 6주)"]},
             {title:"기여도", content:["1명(100%)"]},
-            {title:"주요기능", content:["고객 : 회원가입, 로그인, 정보수정, 장바구니, 상품구매, 구매취소, 게시판 작성/수정/삭제, 댓글",
-                                       "관리자 : 상품 등록/수정/삭제, 재고관리, 배송관리 등"]},
+            {title:"주요기능", content:["#고객 : 회원가입, 로그인, 정보수정, 장바구니, 상품구매, 게시판 기능, 댓글",
+                                       "#관리자 : 상품 등록/수정/삭제, 재고관리, 배송관리 등"]},
             {title:"활용기술", content:["php, mysql, apache"]}     
         ];
         const lists=list.map((lists, index) => <ShoesContent title={lists.title} content={lists.content} key={index}/>);
@@ -31,7 +29,7 @@ class Shoes extends Component{
                 
                     <div className="Shoes-image">
                         <a href="http://chldlsgh120.dothome.co.kr">
-                            <img src={this.state.data} alt=""></img>
+                            <img src={process.env.PUBLIC_URL+this.state.data} alt=""></img>
                         </a>
                     </div>
                     <div className="Shoes-content">
@@ -43,7 +41,7 @@ class Shoes extends Component{
                <div className="Shoes-bottom">
                    <div className="Shoes-bottoms">
                         {this.state.image.map((image, index) =>
-                            <img className="imageRender" key={index} src={image} alt="" onClick={()=>{this.setState({data:image})}}></img>    
+                            <img className="imageRender" key={index} src={process.env.PUBLIC_URL+image} alt="" onClick={()=>{this.setState({data:image})}}></img>    
                         )}
                    </div>
                     

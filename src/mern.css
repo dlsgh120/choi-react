@@ -1,36 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
 
 
-.Shoes{
+.Mern{
     height:100%;
     border-bottom: 1px solid #e5e5e5;
     padding-bottom:7%;
 }
-.Shoes-header{
+.Mern-header{
     padding-top: 7%;
 }
 
-.Shoes-header h2{
+.Mern-header h2{
     text-align: center;
     font-family: 'Fredoka One', cursive;
     font-size: 38px;
 }
 
-.Shoes-header p{
+.Mern-header p{
     text-align: center;
     font-size: 16px;
 }
 
-.Shoes-image{
+.Mern-image{
     margin-right:30px;
 }
 
-.Shoes-image img{
+.Mern-image img{
     width: 700px;
     height: 500px;
 }
 
-.Shoes-body{
+.Mern-body{
     margin-top:5%;
     margin-left:20%;
 }
@@ -47,20 +47,20 @@
 
 } */
 
-.Shoes-title p{
+.Mern-title p{
     font-size: 16px;
     font-weight: bold;
 }
 
-.Shoes-Sub p{
+.Mern-Sub p{
     font-size: 14px;
 }
 
-.Shoes-bottom{
+.Mern-bottom{
     display: flex;
     margin-top: 80px;
 }
-.Shoes-bottoms{
+.Mern-bottoms{
     display: flex;
     flex-wrap: wrap;
     margin-left:auto;

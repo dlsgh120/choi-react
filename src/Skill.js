@@ -1,56 +1,87 @@
 import React, {Component} from 'react';
 import './Skill.css';
-
+import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 class Skill extends Component{
     render(){
-        const list=[
-            {title:"Languege(WEB)", content:["html","css","javascript","php"], image:["https://ifh.cc/g/Cv1oj.png","https://ifh.cc/g/KvTta.png","https://ifh.cc/g/lo6gG.png","https://ifh.cc/g/HedlQ.png",]}, //html, css, javascript, php 로고 url
-            {title:"FrameWork", content:["react","laravel"], image:["https://ifh.cc/g/XccDP.png", "https://ifh.cc/g/eQMSZ.png"]},                 //react , laravel 로고 url
-            {title:"Database", content:["mysql"], image:["https://ifh.cc/g/sJeL3.png"]},                             //mysql 로고 url
-            {title:"CloudService", content:["heroku"], image:["https://ifh.cc/g/Ta5CS.png"]},                        //heroku 로고 url
-            {title:"etc", content:["git","github"], image:["https://ifh.cc/g/xVkbC.png","https://ifh.cc/g/3ZiEF.png"]}                            //git, github 로고 url
-        ]
-        
-        const getList = list.map((skill, index)=>{
-            return <SkillInfo
-            title={skill.title}
-            image={skill.image}
-            key={index}/>
-        })
-        // console.log(list);
         return(
             <div className="Skill" id="Skill">
-                <h3 className="Skill-header">S k i l l</h3>
-                    {getList}
-            </div>
-        );
-    }
-}
-
-class SkillInfo extends Component{
-    render(){
-        
-        return(
-           <div className="Skill-info">
-             <div className="Skill-title">
-                <h3>{this.props.title}</h3>
-             </div>
-
-             <div className="Skill-image">
-                 <div className="Skill-image-flex">
-                    {this.props.image.map((image,index) =>
-                    <Skillimage image={image} key={index}/>)} 
+                <div className="s3">
+                     <div className="Skill-header">Use Skill</div>
                  </div>
-             </div>
-           </div>   
-        );
-    }
-}
 
-class Skillimage extends Component{
-    render(){
-        return(
-                <img src={this.props.image} alt="" className="Skill-images"></img>
+                <div className="s1">
+                    <p className="skill-content">Back-End</p>
+                   <div className="s4">
+                   <div className="skill-subject">
+                        <p>
+                       <ArrowRightIcon style={{'verticalAlign':'middle'}} />Node.js(Express)
+                        </p>
+                        <p>
+                        <ArrowRightIcon style={{'verticalAlign':'middle'}} />php(Laravel)
+                        </p>
+                    </div>
+                   </div>
+                </div> 
+
+                <div className="s1">
+                    <p className="skill-content">front-End</p>
+                   <div className="s4">
+                   <div className="skill-subject">
+                        <p>
+                           <ArrowRightIcon style={{'verticalAlign':'middle'}} />React.js
+                        </p>
+                        <p>
+                           <ArrowRightIcon style={{'verticalAlign':'middle'}} />Redux(Redux-thunk)
+                        </p>  
+                        </div>
+                   </div>
+                </div>
+
+                <div className="s1">
+                    <p className="skill-content">DataBase</p>
+                   <div className="s4">
+                   <div className="skill-subject">
+                        <p>
+                          <ArrowRightIcon style={{'verticalAlign':'middle'}} />Mysql
+                        </p>
+                        <p>
+                           <ArrowRightIcon style={{'verticalAlign':'middle'}} />MongoDB
+                        </p>
+                        </div>
+                   </div>
+                </div>
+
+                <div className="s1">
+                    <p className="skill-content">Design</p>
+                       <div className="s4">
+                       <div className="skill-subject">
+                        <p>
+                            <ArrowRightIcon style={{'verticalAlign':'middle'}} />Bootstrap
+                        </p>
+                        <p> 
+                            <ArrowRightIcon style={{'verticalAlign':'middle'}} />material-ui
+                        </p>
+                        </div>
+                       </div>
+                </div>
+
+                <div className="s1">
+                    <p className="skill-content">Etc</p>
+                       <div className="s4">
+                       <div className="skill-subject">
+                        <p>
+                          <ArrowRightIcon style={{'verticalAlign':'middle'}} />git 
+                        </p>
+                        <p> 
+                          <ArrowRightIcon style={{'verticalAlign':'middle'}} />github
+                        </p>
+                        <p> 
+                          <ArrowRightIcon style={{'verticalAlign':'middle'}} />heroku
+                        </p>
+                        </div>
+                       </div>
+                </div>
+            </div>
         );
     }
 }

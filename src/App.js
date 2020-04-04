@@ -3,8 +3,8 @@ import './App.css';
 import './header.css';
 import Home from './Home';
 import Skill from './Skill';
+import Mern from './Mern';
 import Shoes from './Shoes';
-import Board from './Board';
 import Contact from './Contact';
 
 import {Link} from 'react-scroll';
@@ -17,8 +17,8 @@ class App extends Component{
         <Header/>
         <Home />
         <Skill />
+        <Mern />
         <Shoes />
-        <Board />
         <Contact />
       </div>
     );
@@ -27,7 +27,7 @@ class App extends Component{
 
 class Header extends Component{
   render(){
-      const lists=["Home", "Skill", "Shoes", "Board", "Contact"];
+      const lists=["Home", "Skill", "Mern", "Shoes", "Contact"];
       const listMenu = lists.map((list, index) => 
       <li  key={index}>
       <Link

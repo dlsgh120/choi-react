@@ -1,40 +1,53 @@
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
 
 .Skill{
-    background-color: #e5e5e5;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     display: block;
-    text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
+    border-bottom:1px solid #e5e5e5;
+}
+.skill-content{
+    font-size: 20px;
+    font-family: 'Fredoka One', cursive;
+    margin:0;
 }
 
 .Skill-header{
     margin-top:0;
-    padding-top: 50px;
+    padding-top: 100px;
     font-size: 32px;
     padding-bottom:30px;
+    margin-bottom:50px;
     font-family: 'Fredoka One', cursive;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.Skill-image{
+
+.skill-subject{
+    font-size: 18px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.s1{
+    text-align: center;
+
+    margin-bottom:10px;
+
+
+}
+.s3{
+    display: flex;
+}
+.s4{
     display: flex;
 }
 
-.Skill-image-flex{
-   display: flex;
-   margin-right:auto;
-   margin-left:auto;
-}
-
-.Skill-images{
-    width: 100px;
-    height: 100px;
-    margin-left: 20px;
-    border-radius: 30px 30px;
-    box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);
-    background-size: cover;
-    background-size: cover;
+.skill-subject p{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
