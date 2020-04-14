@@ -31,7 +31,10 @@ class Skill extends Component{
                            <ArrowRightIcon style={{'verticalAlign':'middle'}} />React.js
                         </p>
                         <p>
-                           <ArrowRightIcon style={{'verticalAlign':'middle'}} />Redux(Redux-thunk)
+                           <ArrowRightIcon style={{'verticalAlign':'middle'}} />Redux
+                        </p> 
+                        <p>
+                           <ArrowRightIcon style={{'verticalAlign':'middle'}} />Redux-thunk
                         </p>  
                         </div>
                    </div>
